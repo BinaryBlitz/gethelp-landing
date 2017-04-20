@@ -7,13 +7,18 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
 
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/jquery.smartbanner.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
 	<link rel="icon" type="image/png" href="img/logo.png">
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/jquery.smartbanner.css" type="text/css" media="screen">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js" defer></script>
+	<script src="js/bootstrap.min.js" defer></script>
+	<script src="js/mask.js" defer></script>
+  <script src="js/popup.js" defer></script>
+  <script src="js/phone-mask.js" defer></script>
+  <script src="js/form.js" defer></script>
   <script src="js/jquery.smartbanner.js"></script>
   <script type="text/javascript">
     $(function() {
@@ -23,32 +28,37 @@
       });
     });
   </script>
-<title>GetHelp - contacts</title>
+  <title>GetHelp - contacts</title>
 </head>
 <body>
 	<!--******** POPUP ALERT ********-->
 	<!--*****************************-->
-	<div class="popup" id="popupi"> 
-		<div><img src="img/icon-close.png" id="closeIcon"></div>
+	<div class="popup" id="popupi">
+		<div><img src="img/icon-close.png" id="close-icon"></div>
 		<div class="container">
-			<div style="display:inline-block;">
-			<div class="col-lg-12 col-md-12 col-sm-12 "><div style="text-align: center;"><img src="img/icon-callback.png" class="CallbackIcon"></div><div class="CallbackName">Оставьте контактный номер телефона и мы перезвоним вам</div></div>
+			<div class="inline-block">
+			<div class="col-lg-12 col-md-12 col-sm-12 ">
+        <div class="align-center">
+          <img src="img/icon-callback.png" class="CallbackIcon">
+        </div>
+        <div class="callback-name">Оставьте контактный номер телефона и мы перезвоним вам</div>
+      </div>
 			<form action="" method="post">
 				<div class="row">
 					<div class=" col-lg-offset-4 col-lg-4 col-md-offset-4 col-md-4 col-sm-12 col-xs-12">
-						<label class="FormLabel">Имя</label>
-						<input type="text" name="name" class="input placeholder" placeholder="Имя" required id="nameIn">
+						<label class="form-label">Имя</label>
+						<input type="text" name="name" class="input placeholder" placeholder="Имя" required id="cbName">
 					</div>
 				</div>
 				<div class="row">
 					<div class=" col-lg-offset-4 col-lg-4 col-md-offset-4 col-md-4 col-sm-12 col-xs-12">
-						<label class="FormLabel">Телефон</label>
-						<input type="tel" name="phone" class="input" placeholder="+7 (900) 000 00 00" required id="phone">
+						<label class="form-label">Телефон</label>
+						<input type="tel" name="phone" class="input" placeholder="+7 (900) 000 00 00" required id="cbPhone">
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-lg-12 btnHandler">
-						<button class="formBtn" type="submit" href="">Заказать обратный звонок</button>
+					<div class="col-lg-12 btn-handler">
+						<button class="form-btn" type="submit" href="">Заказать обратный звонок</button>
 					</div>
 				</div>
 			</form>
@@ -59,187 +69,193 @@
 	<!--************************-->
 	<header>
 		<div class="header">
-				<nav class="navbar">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="border-color: rgb(0,0,0);">
-								<span class="sr-only">Toggle navigation</span>
-					            <span class="icon-bar" style="background-color: rgb(0,0,0)"></span>
-					            <span class="icon-bar" style="background-color: rgb(0,0,0)"></span>
-					            <span class="icon-bar" style="background-color: rgb(0,0,0)"></span>
-							</button>
-							<a class="navbar-brand navText" href="#"><img src="img/logoH.png" id="logo"></a>
-						</div>
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav navbar-right">
-								<li>
-									<a class="headerLink firstHead" href="">О сервисе</a>
-								</li>
-								<li>
-									<a href="tel:+74993941607" class="navText headerLink"><span id="blackPh">8 (499)</span><span id="orangePh"> 394-16-07</span></a>
-								</li>	
-								<li>
-									<a class="navBtn " href="">Сделать заказ</a>
-								</li>
-								<li>
-									<a class="navBtn" id="recall">Перезвоните мне</a>
-								</li>
-							</ul>
-						</div>
-				</nav>
-		</div>
+			<nav class="navbar">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle black-border" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar black-bgcolor"></span>
+	            <span class="icon-bar black-bgcolor"></span>
+	            <span class="icon-bar black-bgcolor"></span>
+					</button>
+					<a class="navbar-brand navText" href="home.html">
+            <img src="img/logoH.png" id="logo">
+          </a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a class="active header-link firstHead" href="home.html">О сервисе</a>
+						</li>
+						<li>
+							<a href="tel:+74993941607" class="navText header-link">
+                <span id="black-ph">8 (499)</span>
+                <span id="orange-ph"> 394-16-07</span>
+              </a>
+						</li>
+						<li>
+							<a class="nav-btn " href="contacts.html">Сделать заказ</a>
+						</li>
+						<li>
+							<a class="nav-btn" id="recall">Перезвоните мне</a>
+						</li>
+					</ul>
+				</div>
+		  </nav>
+	  </div>
 	</header>
 
 	<!--******** FORM SECTION ********-->
 	<!--******************************-->
-	<div style="padding-bottom: 40px;">
+	<div class="form-padding">
 		<div class="container">
 			<div class="row">
-			
-				<div class="col-lg-12 FormTitle">
+				<div class="col-lg-12 form-title">
 					Как с нами связаться
 				</div>
 			</div>
 			<div class="row">
-				<div class="FormLinks">
-					<div class=" col-lg-offset-3 col-lg-3 col-md-6 col-sm-6 col-xs-12 alignRight">
-						<a href="mailto:info@gethelp.ru" class="contactsLink" id="contactMail"><img src="img/Icon-mail.png" class="contactsIcon">info@gethelp.ru</a>
+				<div class="form-links">
+					<div class=" col-lg-offset-3 col-lg-3 col-md-6 col-sm-6 col-xs-12 align-right">
+						<a href="mailto:info@gethelp.ru" class="contacts-link" id="contact-mail">
+              <img src="img/Icon-mail.png" class="contacts-icon">
+              info@gethelp.ru
+            </a>
 					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 alignPhone">
-						<a href="tel:+74993941607" class="contactsLink" id="contactPhone"><img src="img/Icon-phone.png" class="contactsIcon">8 (499) 394-16-07</a>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 align-phone">
+						<a href="tel:+74993941607" class="contacts-link" id="contact-phone">
+              <img src="img/Icon-phone.png" class="contacts-icon">
+              8 (499) 394-16-07
+            </a>
 					</div>
 				</div>
 			</div>
-			<hr class="smallline" size="3">
-			<div class="FormHandler">
-			<form action="" method="post">
-				<div class="row">
-					<div class=" col-lg-offset-3 col-lg-3 col-md-offset-3 col-md-3 col-sm-12 col-xs-12 alignRight">
-						<label class="FormLabel">Имя</label>
-						<input type="text" name="name" class="input placeholder" placeholder="Имя" required id="nameIn">
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 alignPhone">
-						<label class="FormLabel">E-mail</label>
-						<input type="email" name="email" class="input" placeholder="E-mail" required id="emailInput">
-					</div>
-				</div>
-				<div class="row">
-					<div class=" col-lg-offset-3 col-lg-3 col-md-offset-3 col-md-3 col-sm-12 col-xs-12 alignRight">
-						<label class="FormLabel">Телефон</label>
-						<input type="tel" name="phone" class="input" placeholder="+7 (900) 000 00 00" required id="phone">
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 alignPhone blockwithselect">
-						<label class="FormLabel">Тип работы</label>
-						<select class="selectpicker" title="Тип работы">
-						  <option class="firstDivider">Тип работы 1</option>
-						  <option>Тип работы 2</option>
-						  <option class="lastDivider">Тип работы 3</option>
-						</select>
-					</div>
-				</div>
-				<div class="row">
-					<div class=" col-lg-offset-3 col-lg-3 col-md-offset-3 col-md-3 col-sm-12 col-xs-12 alignRight">
-						<label class="FormLabel">Предмет</label>
-						<input type="" name="subject" class="input" placeholder="Ваш Предмет" required id="subject">
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 alignPhone">
-						<label class="FormLabel">ВУЗ</label>
-						<input type="" name="uni" class="input" placeholder="Название вуза" required id="uni">
-					</div>
-				</div>
-				<div class="row">
-					<div class=" col-lg-offset-3 col-lg-3 col-md-offset-3 col-md-3 col-sm-12 col-xs-12 alignRight">
-						<label class="FormLabel">Факультет</label>
-						<input type="" name="faculty" class="input" placeholder="Название Факультета" required id="fac">
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 alignPhone blockwithselect">
-						<label class="FormLabel">Курс</label>
-						<select class="selectpicker" title="Курс">
-						  <option class="firstDivider">1 Курс</option>
-						  <option>2 Курс</option>
-						  <option>3 Курс</option>
-						  <option class="lastDivider">4 Курс</option>
-						  
-						</select>
-					</div>
-				</div>
-				<div class="row">
-					<div class=" col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-12 col-xs-12 alignRight">
-						<label class="FormLabel">Описание работы</label>
-						<textarea name="description" class="textarea"></textarea>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-12 btnHandler">
-						<button class="formBtn" type="submit" href="">Отправить</button>
-					</div>
-				</div>
-			</form>
+			<hr class="sm-line" size="3">
+			<div class="form-handler">
+			  <form action="" method="post">
+          <div class="row">
+            <div class=" col-lg-offset-3 col-lg-3 col-md-offset-3 col-md-3 col-sm-12 col-xs-12 align-right">
+              <label class="form-label">Имя</label>
+              <input type="text" name="name" class="input placeholder" placeholder="Имя" required id="formName">
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 align-phone">
+              <label class="form-label">E-mail</label>
+              <input type="email" name="email" class="input" placeholder="E-mail" required id="emailInput">
+            </div>
+          </div>
+          <div class="row">
+            <div class=" col-lg-offset-3 col-lg-3 col-md-offset-3 col-md-3 col-sm-12 col-xs-12 align-right">
+              <label class="form-label">Телефон</label>
+              <input type="tel" name="phone" class="input" placeholder="+7 (900) 000 00 00" required id="formPhone">
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 align-phone blockwithselect">
+              <label class="form-label">Тип работы</label>
+              <select class="selectpicker" title="Тип работы">
+                <option class="first-divider">Тип работы 1</option>
+                <option>Тип работы 2</option>
+                <option class="last-divider">Тип работы 3</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class=" col-lg-offset-3 col-lg-3 col-md-offset-3 col-md-3 col-sm-12 col-xs-12 align-right">
+              <label class="form-label">Предмет</label>
+              <input type="" name="subject" class="input" placeholder="Ваш Предмет" required id="subject">
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 align-phone">
+              <label class="form-label">ВУЗ</label>
+              <input type="" name="uni" class="input" placeholder="Название вуза" required id="uni">
+            </div>
+          </div>
+          <div class="row">
+            <div class=" col-lg-offset-3 col-lg-3 col-md-offset-3 col-md-3 col-sm-12 col-xs-12 align-right">
+              <label class="form-label">Факультет</label>
+              <input type="" name="faculty" class="input" placeholder="Название Факультета" required id="fac">
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 align-phone blockwithselect">
+              <label class="form-label">Курс</label>
+              <select class="selectpicker" title="Курс">
+                <option class="first-divider">1 Курс</option>
+                <option>2 Курс</option>
+                <option>3 Курс</option>
+                <option class="last-divider">4 Курс</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class=" col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-12 col-xs-12 align-right">
+              <label class="form-label">Описание работы</label>
+              <textarea name="description" class="textarea"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 btn-handler">
+              <button class="form-btn" type="submit" href="">Отправить</button>
+            </div>
+          </div>
+        </form>
 			</div>
-		
 		</div>
 	</div>
 
 	<!--******** FOOTER ********-->
 	<!--************************-->
 
-	<footer class="footerContent">
-		<div class="container ">
-			<div class="row ">
-				<div class="col-lg-3 col-md-6 col-sm-6 footerBlock">
-					<div class="footerTitle" id="rules">
+	<footer class="footer-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-6 footer-block">
+					<div class="footer-title" id="rules">
 						Правила сервиса
 					</div>
 					<div>
-						<a href="" class="textLink">Пользовательское соглашение</a>
+						<a href="" class="text-link">Пользовательское соглашение</a>
 					</div>
 					<div>
-						<a href="" class="textLink">Политика конфиденциальности</a>
+						<a href="" class="text-link">Политика конфиденциальности</a>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 footerBlock">
-					<div class="footerTitle" id="downloadapp">
+				<div class="col-lg-3 col-md-6 col-sm-6 footer-block">
+					<div class="footer-title" id="downloadapp">
 						Скачать приложение
 					</div>
-					
-						<a href="">
-							<div class="smallDownloadBtns">
-								<div style="background-image: url(img/AppStore-small.png);width: 90px; height: 26px; background-size: cover; cursor: pointer;">
-									<div style="background-image: url(img/AppStore-small-hover.png);width: 90px; height: 26px; position: absolute; cursor: pointer;" class="onhover-opacity">
-									</div>
-								</div>
-							</div>
-						</a>
-						<a href="">
-							<div class="smallDownloadBtns">
-								<div style="background-image: url(img/GoglePlay-small.png);width: 90px; height: 26px; background-size: cover; cursor: pointer;">
-									<div style="background-image: url(img/GoglePlay-small-hover.png);width: 90px; height: 26px; position: absolute; cursor: pointer;" class="onhover-opacity">
-									</div>
-								</div>
-							</div>
-						</a>
-					
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 footerBlock">
-					<div class="footerTitle devandpay">
-						Разработчики
-					</div>
 					<a href="">
-						<div>
-							<div style="background-image: url(img/Logo-binaryblitz.png);width: 164px; height: 18px; background-size: cover; cursor: pointer; display: inline-block;">
-								<div style="background-image: url(img/Logo-binaryblitz-hover.png);width: 164px; height: 18px; position: absolute; cursor: pointer;" class="onhover-opacity">
+					  <div class="sm-download-btns">
+							<div class="app-store-small-btn">
+								<div class="onhover-opacity app-store-small-btn-hover">
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="">
+						<div class="sm-download-btns">
+							<div class="google-play-small-btn">
+								<div class="onhover-opacity google-play-small-btn-hover">
 								</div>
 							</div>
 						</div>
 					</a>
 				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 footerBlock">
-					<div class="footerTitle devandpay">
+				<div class="col-lg-3 col-md-6 col-sm-6 footer-block">
+					<div class="footer-title devandpay">
+						Разработчики
+					</div>
+					<a href="">
+						<div>
+							<div class="binaryblitz-logo">
+								<div class="onhover-opacity binaryblitz-logo-hover">
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 footer-block">
+					<div class="footer-title devandpay">
 						Платёжная система
 					</div>
 					<a href="">
 						<div>
-							<div style="background-image: url(img/Logo-robokassa.png);width: 147px; height: 17px; background-size: cover; cursor: pointer; display: inline-block;">
-								<div style="background-image: url(img/Logo-robokassa-hover.png);width: 147px; height: 17px; position: absolute; cursor: pointer;" class="onhover-opacity">
+							<div class="robokassa-logo">
+								<div class="onhover-opacity robokassa-logo-hover">
 								</div>
 							</div>
 						</div>
@@ -253,80 +269,5 @@
 			</div>
 		</div>
 	</footer>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/mask.js"></script>
-	<script>
-		$(".input[name='phone']").mask("+7 (999) 999-99-99");
-	</script>
-	<script type="text/javascript">
-		var validations ={
-	    email: [/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/, 'Please enter a valid email address']
-		};
-		$(document).ready(function(){
-		    // Check all the input fields of type email. This function will handle all the email addresses validations
-		    $("input[type=email]").change( function(){
-		        // Set the regular expression to validate the email 
-		        validation = new RegExp(validations['email'][0]);
-		        // validate the email value against the regular expression
-		        if (!validation.test(this.value)){
-		            // If the validation fails then we show the custom error message
-		            this.setCustomValidity(validations['email'][1]);
-		            $("#emailInput").css("border-color", "#f36c12");
-		            $("#emailInput").css("color", "#f36c12");
-		            var el = document.getElementById("emailInput");
-		            el.classList.remove("approve");
-		    		el.classList.add("failed");
-		            return false;
-		        } else {
-		            // This is really important. If the validation is successful you need to reset the custom error message
-		            this.setCustomValidity('');
-		            $("#emailInput").css("border-color", "#929292");
-		            $("#emailInput").css("color", "#929292");
-		            var el = document.getElementById("emailInput");
-		            el.classList.add("approve");
-		            el.classList.remove("failed");
-		    		
-
-		        }
-		    });
-		    $("#nameIn").change(function(){
-		    	var el = document.getElementById("nameIn");
-		    	el.className += " approve";
-		    });
-		    $("#phone").change(function(){
-		    	var el = document.getElementById("phone");
-		    	el.className += " approve";
-		    });
-		    $("#subject").change(function(){
-		    	var el = document.getElementById("subject");
-		    	el.className += " approve";
-		    });
-		    $("#uni").change(function(){
-		    	var el = document.getElementById("uni");
-		    	el.className += " approve";
-		    });
-		    $("#fac").change(function(){
-		    	var el = document.getElementById("fac");
-		    	el.className += " approve";
-		    });
-		})
-	</script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			document.getElementById('recall').onclick = function(){
-				var el = document.getElementById("popupi");
-		    	el.classList.add("popupFlex");
-		        el.classList.remove("popup");
-
-			};
-			document.getElementById('closeIcon').onclick = function(){
-				var el = document.getElementById("popupi");
-		    	el.classList.add("popup");
-		        el.classList.remove("popupFlex");
-		    };
-		})
-	</script>
 </body>
 </html>
