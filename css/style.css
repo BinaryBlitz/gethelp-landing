@@ -1,0 +1,669 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'myriad-light';
+    src: url('../fonts/Myriad Pro Light.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'myriad-bold';
+    src: url('../fonts/MyriadPro-Bold_0.otf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'myriad-boldcond';
+    src: url('../fonts/MyriadPro-BoldCond_0.otf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'myriad-boldcondIt';
+    src: url('../fonts/MyriadPro-BoldCondIt_0.otf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'myriad-boldIt';
+    src: url('../fonts/MyriadPro-BoldIt_0.otf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'myriad-cond';
+    src: url('../fonts/MyriadPro-Cond_0.otf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'myriad-condIt';
+    src: url('../fonts/MyriadPro-CondIt_0.otf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'myriad-It';
+    src: url('../fonts/MyriadPro-It_0.otf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'myriad-light';
+    src: url('../fonts/MyriadPro-Light.otf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'myriad-regular';
+    src: url('../fonts/MyriadPro-Regular.otf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'myriad-semibold';
+    src: url('../fonts/MyriadPro-Semibold_0.otf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'myriad-semiboldIt';
+    src: url('../fonts/MyriadPro-SemiboldIt_0.otf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background: none !important;
+}
+a:hover{
+  text-decoration: none !important;
+}
+.header{
+  padding-top: 50px;
+}
+
+a.navbar-brand{
+  padding-left: 57px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 100px;
+}
+.headerLink{
+  font-size: 18px;
+  font-family: myriad-semibold;
+  color: #000;
+  text-transform: uppercase;
+  margin-right: 50px;
+}
+.headerLink:hover{
+  color: #000;
+}
+.active{
+  color: #f36c12;
+  border-bottom: 2px solid #f36c12;
+}
+.active:hover{
+  color: #f36c12;
+}
+#blackPh{
+  font-family: myriad-bold;
+  font-size: 26px;
+
+}
+#orangePh{
+  font-family: myriad-bold;
+  font-size: 26px;
+  color: #f36c12;
+}
+.navBtn{
+  font-size: 16px;
+  font-family: myriad-regular;
+  color:#f36c12;
+  text-transform: uppercase;
+  border-radius: 7px;
+  border: solid 1px #f36c12;
+  background-color: transparent;
+  padding: 17px 38px;
+  margin-right: 25px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.nav > li > a.navBtn:hover{
+  color: #fff;
+  background-color: #f36c12 !important;
+}
+.nav > li > a.navBtn:focus{
+  background-color: #f36c12;
+}
+.title{
+  font-size: 50px;
+  font-family: myriad-light;
+  color: #000;
+  padding-top: 95px;
+  padding-bottom: 100px;
+}
+.description{
+  font-size: 20px;
+  font-family: myriad-light;
+  color: #929292;
+  padding-bottom: 100px;
+}
+.download{
+  font-size: 16px;
+  font-family: myriad-regular;
+  color: #010101;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+}
+.Iphone{
+  padding-bottom: 60px;
+  overflow: hidden;
+}
+.IphoneCener{
+  text-align: center;
+}
+.FeaturesTittle{
+  padding-top: 90px;
+  padding-bottom: 95px;
+  font-family: myriad-light;
+  font-size: 34px;
+  text-align: center;
+}
+#name{
+  font-family: myriad-regular;
+  font-size: 34px;
+}
+.featurePic{
+  padding-bottom: 20px;
+}
+.featureName{
+  padding-bottom: 37px;
+  font-family: myriad-regular;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #000;
+}
+.featureDescription{
+  padding-bottom: 50px;
+  font-family: myriad-light;
+  font-size: 16px;
+  color: #929292;
+}
+.HowWWTitle{
+  font-family: myriad-light;
+  font-size: 34px;
+  padding-top: 90px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.HowWWDescription{
+  font-family: myriad-light;
+  font-size: 20px;
+  text-align: center;
+  color: #929292;
+  padding-bottom: 95px;
+}
+.HowWWIcon{
+  height: 45px;
+}
+.HowWWName{
+  font-family: myriad-regular;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 30px 50px;
+}
+.arrow1{
+  padding-left: 170px;
+  padding-bottom: 20px;
+}
+.arrow2{
+  padding-bottom: 20px;
+  padding-left: 90px;
+}
+.arrow3{
+  padding-bottom: 20px;
+  padding-left: 90px;
+}
+@media screen and (max-width: 1200px){
+  .arrow1{
+    display: none;
+  }
+  .arrow2{
+    display: none;
+  }
+  .arrow3{
+    display: none;
+  }
+}
+.footerContent{
+  padding-top: 40px;
+  background-color: #f9f9f9;
+}
+.footerTitle{
+  font-family: myriad-light;
+  font-size: 15px;
+  color:#000000;
+  text-transform: uppercase;
+}
+.copyrights{
+  padding-top: 25px;
+  font-size: 14px;
+  font-family: myriad-light;
+  color: #929292;
+  padding-bottom: 35px;
+}
+
+.onhover-opacity {
+  opacity: 0;
+  transition:0.7s;
+}
+.onhover-opacity:hover {
+  opacity: 1;
+}
+.downloadBtns{
+  padding-right: 20px;
+  display: inline-block;
+}
+.smallDownloadBtns{
+  display: inline-block;
+  padding-right: 10px;
+}
+#rules{
+  padding-bottom: 17px;
+}
+#downloadapp{
+  padding-bottom: 22px;
+}
+.devandpay{
+  padding-bottom: 30px;
+}
+.footerBlock{
+  padding-bottom: 25px;
+}
+@media screen and (max-width: 1200px){
+  .smallDownloadBtns{
+    margin-bottom: 6px;
+  }
+}
+.textLink{
+  text-decoration: none;
+  font-family: myriad-light;
+  font-size: 14px;
+  color: #929292;
+  transition:0.7s;
+}
+.textLink:hover{
+  color: #f48f4b;
+  text-decoration: none;
+}
+.HowWW{
+  padding-bottom: 90px;
+}
+@media screen and (max-width: 768px){
+  .footerContent{
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px){
+  .IphonePic{
+    height: 400px;
+  }
+  .downloadBtns{
+    padding-right: 15px;
+    padding-bottom: 10px;
+  }
+  .title{
+    padding-top: 45px;
+    padding-bottom: 50px;
+  }
+  .description{
+    padding-bottom: 50px;
+  }
+  .FeaturesTittle{
+    padding-top: 40px;
+    padding-bottom: 45px;
+  }
+  .HowWWTitle{
+    padding-top: 0px;
+  }
+  .HowWW{
+    padding-bottom: 40px;
+  }
+}
+.FormTitle{
+  font-size: 34px;
+  font-family: myriad-light;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.FormLinks{
+  font-size: 18px;
+  font-family: myriad-light;
+  padding-bottom: 65px;
+}
+.contactsLink{
+  color: #000;
+  text-decoration: none;
+}
+.contactsLink:hover{
+  color: #000;
+  text-decoration: none;
+}
+#contactMail{
+  padding-right: 38px;
+}
+#contactPhone{
+  padding-left: 38px;
+  font-family: myriad-regular;
+}
+.contactsIcon{
+  padding-right: 19px;
+}
+.smallline{
+  width: 10%;
+  height: 1px;
+  background-color: #929292;
+  margin: 0 auto;
+}
+.FormHandler{
+  padding-top: 35px;
+}
+.input{
+  outline: none;
+  border: 1px solid #929292;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  width: 100%;
+  height: 48px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  background-color: rgb(255, 255, 255);
+}
+.textarea{
+  outline: none;
+  border: 1px solid #929292;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  width: 100%;
+  height: 95px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  background-color: rgb(255, 255, 255);
+  resize:none;
+}
+select[name='jobtype'] option[disabled]{
+  display: none;
+}
+select[name='course'] option[disabled]{
+  display: none;
+}
+.option{
+  color: #929292;
+}
+.FormLabel{
+  float: left;
+  color: #333;
+  font-size: 16px;
+  font-family: myriad-light;
+}
+.placeholder{
+  color: #000;
+}
+.btnHandler{
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.left{
+  float: right;
+}
+.right{
+  float: left;
+}
+.alignRight{
+  text-align: right;
+}
+.formBtn{
+  font-size: 16px;
+  font-family: myriad-regular;
+  color:#f36c12;
+  text-transform: uppercase;
+  border-radius: 7px;
+  border: solid 1px #f36c12;
+  background-color: transparent;
+  padding: 17px 38px;
+  transition: 0.4s;
+}
+.formBtn:hover{
+  color: #fff;
+  background-color: #f36c12 !important;
+}
+@media screen and (max-width: 992px){
+  .left{
+    text-align: center;
+  }
+  .right{
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px){
+  .alignRight{
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .alignPhone{
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  #contactPhone{
+    padding-left: 0px;
+  }
+  #contactMail{
+    padding-right: 19px;
+  }
+}
+.approve{
+  background-image: url("../img/icon-check.png");
+  background-position: 95%;
+  background-repeat: no-repeat;
+}
+.failed{
+  background-image: url("../img/Icon-del.png");
+  background-position: 95%;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 767px){
+  .firstHead{
+    margin-top: 10px;
+  }
+  .headerLink{
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+  .navBtn{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  a.navbar-brand{
+    padding-left: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+  }
+  .title{
+    font-size: 36px;
+  }
+}
+@media screen and (max-width:1200px) and (min-width:993px){
+  .headerLink{
+    font-size: 14px;
+    margin-right: 25px;
+  }
+  a.navbar-brand{
+    padding-left: 20px;
+    padding-right: 50px;
+  }
+  #blackPh{
+    font-size: 17px;
+  }
+  #orangePh{
+    font-size: 17px;
+  }
+}
+@media screen and (max-width:992px) and (min-width:768px){
+  .headerLink{
+    font-size: 12px;
+    margin-right: 15px;
+  }
+  a.navbar-brand{
+    padding-left: 10px;
+    padding-right: 25px;
+  }
+  #blackPh{
+    font-size: 14px;
+  }
+  #orangePh{
+    font-size: 14px;
+  }
+  .navBtn{
+    font-size: 12px;
+    margin-right: 10px;
+  }
+}
+.popup{
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(255,255,255,0.98);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: none;
+}
+.popupFlex{
+  position: fixed;
+  z-index: 1000000000;
+  background-color: rgba(255,255,255,0.98);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+.CallbackName{
+  font-family: myriad-regular;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 30px 300px;
+}
+@media screen and (max-width: 992px){
+  .CallbackName{
+    padding: 30px 0px;
+}
+}
+#closeIcon{
+  position: absolute;
+  top:10px;
+  right: 5px;
+  cursor: pointer;
+}
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+  width: 100% !important;
+}
+.btn{
+  padding: 12px 12px !important;
+}
+.btn-default{
+  border-color: #929292 !important;
+}
+.btn-default:hover{
+  background-color: #fff !important;
+  border-color: #929292 !important;
+}
+.btn-default:active{
+  background-color: #fff !important;
+  border-color: #929292 !important;
+}
+.btn-default:visited{
+  background-color: #fff !important;
+  border-color: #929292 !important;
+}
+.btn-default:focus{
+  background-color: #fff !important;
+  border-color: #929292 !important;
+}
+.btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default{
+  background-color: #fff !important;
+  border-color: #929292 !important;
+}
+.dropdown-menu>li>a:focus, 
+.dropdown-menu>li>a:hover{
+  background-color: #f9f9f9 !important;
+  color: #f36c12 !important;
+  border-color: #d3d3d3 !important;
+}
+.blockwithselect{
+  margin-bottom: 15px;
+}
+.bootstrap-select.btn-group .dropdown-menu li a{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #d3d3d3;
+}
+a.lastDivider{
+  border-bottom: none !important;
+  padding-bottom: 7px !important;
+}
+a.firstDivider{
+  padding-top: 7px !important;
+}
+/*CUSTOM SELECTOR STYLES*/
+/************************/

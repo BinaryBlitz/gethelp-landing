@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="icon" type="image/png" href="img/logo.png">
+	<title>GetHelp-Home</title>
+</head>
+<body>
+
+	<!--******** POPUP ALERT ********-->
+	<!--*****************************-->
+	<div class="popup" id="popupi"> 
+		<div><img src="img/icon-close.png" id="closeIcon"></div>
+		<div class="container">
+			<div style="display:inline-block;">
+			<div class="col-lg-12 col-md-12 col-sm-12 "><div style="text-align: center;"><img src="img/icon-callback.png" class="CallbackIcon"></div><div class="CallbackName">Оставьте контактный номер телефона и мы перезвоним вам</div></div>
+			<form action="" method="post">
+				<div class="row">
+					<div class=" col-lg-offset-4 col-lg-4 col-md-offset-4 col-md-4 col-sm-12 col-xs-12">
+						<label class="FormLabel">Имя</label>
+						<input type="text" name="name" class="input placeholder" placeholder="Имя" required id="nameIn">
+					</div>
+				</div>
+				<div class="row">
+					<div class=" col-lg-offset-4 col-lg-4 col-md-offset-4 col-md-4 col-sm-12 col-xs-12">
+						<label class="FormLabel">Телефон</label>
+						<input type="tel" name="phone" class="input" placeholder="+7 (900) 000 00 00" required id="phone">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 btnHandler">
+						<button class="formBtn" type="submit" href="">Заказать обратный звонок</button>
+					</div>
+				</div>
+			</form>
+			</div>
+		</div>
+	</div>
+	<!--******** HEADER ********-->
+	<!--************************-->
+	<header>
+		<div class="header">
+				<nav class="navbar">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="border-color: rgb(0,0,0);">
+								<span class="sr-only">Toggle navigation</span>
+					            <span class="icon-bar" style="background-color: rgb(0,0,0)"></span>
+					            <span class="icon-bar" style="background-color: rgb(0,0,0)"></span>
+					            <span class="icon-bar" style="background-color: rgb(0,0,0)"></span>
+							</button>
+							<a class="navbar-brand navText" href="#"><img src="img/logoH.png" id="logo"></a>
+						</div>
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li>
+									<a class="active headerLink firstHead" href="">О сервисе</a>
+								</li>
+								<li>
+									<a href="tel:+74993941607" class="navText headerLink"><span id="blackPh">8 (499)</span><span id="orangePh"> 394-16-07</span></a>
+								</li>	
+								<li>
+									<a class="navBtn " href="">Сделать заказ</a>
+								</li>
+								<li>
+									<a class="navBtn" id="recall">Перезвоните мне</a>
+								</li>
+							</ul>
+						</div>
+				</nav>
+		</div>
+	</header>
+
+	<!--******** MAIN SECTION ********-->
+	<!--******************************-->
+	<div style="background-image:url(img/BG.png); background-size: cover;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7 col-md-12">
+					<div class="title">
+						Ваш карманный помошник в вопросах учёбы
+					</div>
+					<div class="description">
+						Мы оперативно поможем решить проблемы связанные с учёбой.<br>
+						Квалифицированные специалисты сэкономят ваше время и помогут сдать все работы на отлично. Вам не о чём волноваться.<br>
+						Всё что вам нужно - это скачать приложение и оформить заявку.
+					</div>
+					<div class="download">
+						Скачать приложение
+					</div>
+					<a href="">
+						<div class="downloadBtns">
+							<div style="background-image: url(img/AppStore.png);width: 155px; height: 46px; background-size: cover; cursor: pointer;">
+								<div style="background-image: url(img/AppStore-hover.png);width: 155px; height: 46px; position: absolute; cursor: pointer;" class="onhover-opacity">
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="">
+						<div class="downloadBtns">
+							<div style="background-image: url(img/GoglePlay.png);width: 155px; height: 46px; background-size: cover; cursor: pointer;">
+								<div style="background-image: url(img/GoglePlay-hover.png);width: 155px; height: 46px; position: absolute; cursor: pointer;" class="onhover-opacity">
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 col-lg-offset-1 col-md-12 Iphone">
+					<div class="IphoneCener">
+					<img src="img/Iphone.png" class="IphonePic">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--******** FEATURES SECTION ********-->
+	<!--**********************************-->
+	<div style="padding-bottom: 40px;">
+		<div class="container">
+			<div class="row">
+			
+				<div class="col-lg-12 FeaturesTittle">
+					Особенности приложения <span id="name">GetHelp</span>
+				</div>
+
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<img src="img/Icon-onlinehelp.png" class="featurePic">
+					<div class="featureName">Онлайн помощь на контрольной или экзамене</div>
+					<div class="featureDescription">Вы можете оставить заявку на онлайн-помощь во время контрольной, зачёта или экзамена. Наши специалисты решат задания максимально быстро, оставив вам время для написания работы.</div>
+				</div>
+				<div class="col-md-6">
+					<img src="img/Icon-payment.png" class="featurePic">
+					<div class="featureName">Различные варианты оплаты</div>
+					<div class="featureDescription">Вы можете пополнить счёт мобильного приложения с помощью всех популярных видов платёжных систем. (Visa, MasterCard, Qiwi, WebMoney, YandexMoney и тд.)</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<img src="img/Icon-specialist.png" class="featurePic">
+					<div class="featureName">Квалифицированные специалисты</div>
+					<div class="featureDescription">Наши сотрудники являются экспертом в различных областях. Укажите интересующий вас предмет, и мы обязательно придумаем чем вам помочь.</div>
+				</div>
+				<div class="col-md-6">
+					<img src="img/Icon-result.png" class="featurePic">
+					<div class="featureName">Гарантия результата</div>
+					<div class="featureDescription">Если по какой-то причине вас не устроит результат выполненной работы, мы переделаем работу, либо вернём вам деньги для последующего заказа.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--******** HOW WE WORK SECTION ********-->
+	<!--*************************************-->
+	<div style="background-image:url(img/BG.png); background-size: cover;" class="HowWW">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 HowWWTitle">
+					Как мы работаем
+				</div>
+				<div class="col-lg-12 HowWWDescription">
+					Стоимость заказа рассчитывается в зависимости от его сложности и сроков сдачи.<br>
+					Окончательная цена выставляется после рассмотрения оператором, <br>
+					в личном кабинете пользователя в разделе Заказы.
+				</div>
+			</div>
+			<div class="row">
+				<img src="img/arr.png" class="arrow1">
+				<img src="img/arr.png" class="arrow2">
+				<img src="img/arr.png" class="arrow3">
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-12 "><div style="text-align: center;"><img src="img/Icon-download.png" class="HowWWIcon"></div><div class="HowWWName">Скачайте приложение</div></div>
+				<div class="col-lg-3 col-md-6 col-sm-12"><div style="text-align: center;"><img src="img/Icon-claim.png" class="HowWWIcon"></div><div class="HowWWName">Отправьте заявку на решение</div></div>
+				<div class="col-lg-3 col-md-6 col-sm-12"><div style="text-align: center;"><img src="img/Icon-pay.png" class="HowWWIcon"></div><div class="HowWWName">Пополните кошелёк и оплатите заказ</div></div>
+				<div class="col-lg-3 col-md-6 col-sm-12"><div style="text-align: center;"><img src="img/Icon-congratulations.png" class="HowWWIcon"></div><div class="HowWWName">Получите хорошую оценку</div></div>
+			</div>
+		</div>
+	</div>
+
+	<!--******** FOOTER ********-->
+	<!--************************-->
+
+	<footer class="footerContent">
+		<div class="container ">
+			<div class="row ">
+				<div class="col-lg-3 col-md-6 col-sm-6 footerBlock">
+					<div class="footerTitle" id="rules">
+						Правила сервиса
+					</div>
+					<div>
+						<a href="" class="textLink">Пользовательское соглашение</a>
+					</div>
+					<div>
+						<a href="" class="textLink">Политика конфиденциальности</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 footerBlock">
+					<div class="footerTitle" id="downloadapp">
+						Скачать приложение
+					</div>
+					
+						<a href="">
+							<div class="smallDownloadBtns">
+								<div style="background-image: url(img/AppStore-small.png);width: 90px; height: 26px; background-size: cover; cursor: pointer;">
+									<div style="background-image: url(img/AppStore-small-hover.png);width: 90px; height: 26px; position: absolute; cursor: pointer;" class="onhover-opacity">
+									</div>
+								</div>
+							</div>
+						</a>
+						<a href="">
+							<div class="smallDownloadBtns">
+								<div style="background-image: url(img/GoglePlay-small.png);width: 90px; height: 26px; background-size: cover; cursor: pointer;">
+									<div style="background-image: url(img/GoglePlay-small-hover.png);width: 90px; height: 26px; position: absolute; cursor: pointer;" class="onhover-opacity">
+									</div>
+								</div>
+							</div>
+						</a>
+					
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 footerBlock">
+					<div class="footerTitle devandpay">
+						Разработчики
+					</div>
+					<a href="">
+						<div>
+							<div style="background-image: url(img/Logo-binaryblitz.png);width: 164px; height: 18px; background-size: cover; cursor: pointer; display: inline-block;">
+								<div style="background-image: url(img/Logo-binaryblitz-hover.png);width: 164px; height: 18px; position: absolute; cursor: pointer;" class="onhover-opacity">
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 footerBlock">
+					<div class="footerTitle devandpay">
+						Платёжная система
+					</div>
+					<a href="">
+						<div>
+							<div style="background-image: url(img/Logo-robokassa.png);width: 147px; height: 17px; background-size: cover; cursor: pointer; display: inline-block;">
+								<div style="background-image: url(img/Logo-robokassa-hover.png);width: 147px; height: 17px; position: absolute; cursor: pointer;" class="onhover-opacity">
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 copyrights">
+				&copy; 2015 "GetHelp" Быстрая помощь при учёбе!
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			document.getElementById('recall').onclick = function(){
+				var el = document.getElementById("popupi");
+		    	el.classList.add("popupFlex");
+		        el.classList.remove("popup");
+
+			};
+			document.getElementById('closeIcon').onclick = function(){
+				var el = document.getElementById("popupi");
+		    	el.classList.add("popup");
+		        el.classList.remove("popupFlex");
+		    };
+		})
+	</script>
+</body>
+</html>
