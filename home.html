@@ -2,12 +2,25 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-itunes-app" content="app-id=1073331646">
+  <meta name="google-play-app" content="binaryblitz.gethelpapp">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery.smartbanner.css" type="text/css" media="screen">
 	<link rel="icon" type="image/png" href="img/logo.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/jquery.smartbanner.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $.smartbanner({
+        title: 'GetHelp',
+        author: 'BinaryBlitz'
+      });
+    });
+  </script>
 	<title>GetHelp-Home</title>
 </head>
 <body>
@@ -261,7 +274,6 @@
 
 
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
