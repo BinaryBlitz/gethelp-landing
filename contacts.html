@@ -12,34 +12,27 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
   <link rel="icon" type="image/png" href="img/logo.png">
   <link rel="stylesheet" href="css/jquery.smartbanner.css" media="screen">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js" defer></script>
-  <script src="js/bootstrap.min.js" defer></script>
-  <script src="js/mask.js" defer></script>
-  <script src="js/popup.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/mask.js"></script>
   <script src="js/phone-mask.js" defer></script>
-  <script src="js/form.js" defer></script>
-  <script src="js/jquery.smartbanner.js" defer></script>
-  <script type="text/javascript" defer>
-    $(function() {
-      $.smartbanner({
-        title: 'GetHelp',
-        author: 'BinaryBlitz'
-      });
-    });
-  </script>
+  <script src="js/form.js"></script>
+  <script src="js/popup.js" ></script>
+  <script src="js/jquery.smartbanner.js"></script>
+  <script src="js/smartbanner.js"></script>
   <title>GetHelp - contacts</title>
 </head>
 <body>
   <!--******** POPUP ALERT ********-->
   <!--*****************************-->
   <div class="popup" id="popupi">
-    <div><img src="img/icon-close.png" id="close-icon"></div>
+    <div><img id="close-icon" src="img/icon-close.png"></div>
     <div class="container">
       <div class="inline-block">
         <div class="col-lg-12 col-md-12 col-sm-12 ">
           <div class="align-center">
-            <img src="img/icon-callback.png" class="CallbackIcon">
+            <img class="CallbackIcon" src="img/icon-callback.png">
           </div>
           <div class="callback-name">Оставьте контактный номер телефона и мы перезвоним вам</div>
         </div>
@@ -47,13 +40,13 @@
           <div class="row">
             <div class=" col-lg-offset-4 col-lg-4 col-md-offset-4 col-md-4 col-sm-12 col-xs-12">
               <label class="form-label">Имя</label>
-              <input type="text" name="name" class="input placeholder" placeholder="Имя" required id="cbName">
+              <input class="input placeholder" id="cbName" name="name" type="text" placeholder="Имя" required>
             </div>
           </div>
           <div class="row">
             <div class=" col-lg-offset-4 col-lg-4 col-md-offset-4 col-md-4 col-sm-12 col-xs-12">
               <label class="form-label">Телефон</label>
-              <input type="tel" name="phone" class="input" placeholder="+7 (900) 000 00 00" required id="cbPhone">
+              <input class="input" id="cbPhone" name="phone_number" type="tel" placeholder="+7 (900) 000 00 00" required>
             </div>
           </div>
           <div class="row">
@@ -71,14 +64,14 @@
     <div class="header">
       <nav class="navbar">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle black-border" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <button class="navbar-toggle black-border" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" type="button">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar black-bgcolor"></span>
             <span class="icon-bar black-bgcolor"></span>
             <span class="icon-bar black-bgcolor"></span>
           </button>
           <a class="navbar-brand navText" href="home.html">
-            <img src="img/logoH.png" id="logo">
+            <img id="logo" src="img/logoH.png">
           </a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -87,7 +80,7 @@
               <a class="active header-link firstHead" href="home.html">О сервисе</a>
             </li>
             <li>
-              <a href="tel:+74993941607" class="navText header-link">
+              <a class="navText header-link" href="tel:+74993941607">
                 <span id="black-ph">8 (499)</span>
                 <span id="orange-ph"> 394-16-07</span>
               </a>
@@ -116,14 +109,14 @@
       <div class="row">
         <div class="form-links">
           <div class=" col-lg-offset-3 col-lg-3 col-md-6 col-sm-6 col-xs-12 align-right">
-            <a href="mailto:info@gethelp.ru" class="contacts-link" id="contact-mail">
-              <img src="img/Icon-mail.png" class="contacts-icon">
+            <a class="contacts-link" id="contact-mail" href="mailto:info@gethelp.ru">
+              <img class="contacts-icon" src="img/Icon-mail.png">
               info@gethelp.ru
             </a>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 align-phone">
-            <a href="tel:+74993941607" class="contacts-link" id="contact-phone">
-              <img src="img/Icon-phone.png" class="contacts-icon">
+            <a class="contacts-link" id="contact-phone" href="tel:+74993941607">
+              <img class="contacts-icon" src="img/Icon-phone.png">
               8 (499) 394-16-07
             </a>
           </div>
@@ -135,21 +128,21 @@
           <div class="row">
             <div class=" col-lg-offset-3 col-lg-3 col-md-offset-3 col-md-3 col-sm-12 col-xs-12 align-right">
               <label class="form-label">Имя</label>
-              <input type="text" name="name" class="input placeholder" placeholder="Имя" required id="formName">
+              <input class="input placeholder" id="formName" name="name" type="text" placeholder="Имя" required>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 align-phone">
               <label class="form-label">E-mail</label>
-              <input type="email" name="email" class="input" placeholder="E-mail" required id="emailInput">
+              <input class="input" id="emailInput" name="email" type="email" placeholder="E-mail" required>
             </div>
           </div>
           <div class="row">
             <div class=" col-lg-offset-3 col-lg-3 col-md-offset-3 col-md-3 col-sm-12 col-xs-12 align-right">
               <label class="form-label">Телефон</label>
-              <input type="tel" name="phone_number" class="input" placeholder="+7 (900) 000 00 00" required id="formPhone">
+              <input class="input" id="formPhone" name="phone_number" type="tel" placeholder="+7 (900) 000 00 00" required>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 align-phone blockwithselect">
               <label class="form-label">Тип работы</label>
-              <select class="selectpicker" title="Тип работы" name="activity_type">
+              <select class="selectpicker" name="activity_type" title="Тип работы">
                 <option class="first-divider" value="t1">Тип работы 1</option>
                 <option value="t2">Тип работы 2</option>
                 <option class="last-divider" value="t3">Тип работы 3</option>
@@ -159,21 +152,21 @@
           <div class="row">
             <div class=" col-lg-offset-3 col-lg-3 col-md-offset-3 col-md-3 col-sm-12 col-xs-12 align-right">
               <label class="form-label">Предмет</label>
-              <input type="" name="course" class="input" placeholder="Ваш Предмет" required id="subject">
+              <input class="input" id="subject" name="course" type="" placeholder="Ваш Предмет" required>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 align-phone">
               <label class="form-label">ВУЗ</label>
-              <input type="" name="university" class="input" placeholder="Название вуза" required id="uni">
+              <input class="input" id="uni" name="university" type="" placeholder="Название вуза" required>
             </div>
           </div>
           <div class="row">
             <div class=" col-lg-offset-3 col-lg-3 col-md-offset-3 col-md-3 col-sm-12 col-xs-12 align-right">
               <label class="form-label">Факультет</label>
-              <input type="" name="faculty" class="input" placeholder="Название Факультета" required id="fac">
+              <input class="input" id="fac" name="faculty" type="" placeholder="Название Факультета" required>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 align-phone blockwithselect">
               <label class="form-label">Курс</label>
-              <select class="selectpicker" title="Курс" name="grade">
+              <select class="selectpicker" name="grade" title="Курс">
                 <option class="first-divider" value="1">1 Курс</option>
                 <option value="2">2 Курс</option>
                 <option value="3">3 Курс</option>
@@ -184,7 +177,7 @@
           <div class="row">
             <div class=" col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-12 col-xs-12 align-right">
               <label class="form-label">Описание работы</label>
-              <textarea name="description" class="textarea"></textarea>
+              <textarea class="textarea" name="description"></textarea>
             </div>
           </div>
           <div class="row">
@@ -208,10 +201,10 @@
             Правила сервиса
           </div>
           <div>
-            <a href="" class="text-link">Пользовательское соглашение</a>
+            <a class="text-link" href="">Пользовательское соглашение</a>
           </div>
           <div>
-            <a href="" class="text-link">Политика конфиденциальности</a>
+            <a class="text-link" href="">Политика конфиденциальности</a>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6 footer-block">
