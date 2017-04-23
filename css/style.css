@@ -2,9 +2,9 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
+     -moz-box-sizing: border-box;
+       -o-box-sizing: border-box;
+          box-sizing: border-box;
   outline: none;
   border: none;
   text-decoration: none;
@@ -111,26 +111,18 @@
   background: none !important;
 }
 
-a:hover {
-  text-decoration: none !important;
-}
+a:hover { text-decoration: none !important; }
 
-.header {
-  padding-top: 3.125em;
-}
+.header { padding-top: 3.125em; }
 
 .main {
   background-image: url(../img/BG.png);
   background-size: cover;
 }
 
-.inline-block {
-  display: inline-block;
-}
+.inline-block { display: inline-block; }
 
-.features {
-  padding-bottom: 2.85em;
-}
+.features { padding-bottom: 2.85em; }
 
 a.navbar-brand{
   padding-left: 4em;
@@ -147,13 +139,9 @@ a.navbar-brand{
   text-transform: uppercase;
 }
 
-.header-link:hover {
-  color: #000;
-}
+.header-link:hover { color: #000; }
 
-.active-hover {
-  color: #f36c12;
-}
+.active-hover { color: #f36c12; }
 
 .active:hover {
   color: #f36c12;
@@ -190,9 +178,7 @@ a.navbar-brand{
   background-color: #f36c12 !important;
 }
 
-.nav > li > a.nav-btn:focus {
-  background-color: #f36c12;
-}
+.nav > li > a.nav-btn:focus { background-color: #f36c12; }
 
 .title {
   padding-top: 1.9em;
@@ -315,22 +301,16 @@ a.navbar-brand{
   cursor: pointer;
 }
 
-.black-bgcolor {
-  background-color: rgb(0,0,0);
-}
+.black-bgcolor { background-color: rgb(0,0,0); }
 
-#black-border {
-  border-color: rgb(0,0,0);
-}
+#black-border { border-color: rgb(0,0,0); }
 
 .iphone {
   padding-bottom: 4.3em;
   overflow: hidden;
 }
 
-.align-center {
-  text-align: center;
-}
+.align-center { text-align: center; }
 
 .features-title {
   padding-top: 2.7em;
@@ -345,9 +325,7 @@ a.navbar-brand{
   font-size: 1em;
 }
 
-.feature-pic {
-  padding-bottom: 1.4em;
-}
+.feature-pic { padding-bottom: 1.4em; }
 
 .feature-name {
   padding-bottom: 2em;
@@ -380,9 +358,7 @@ a.navbar-brand{
   color: #929292;
 }
 
-.how-ww-icon {
-  height: 45px;
-}
+.how-ww-icon { height: 45px; }
 
 .how-ww-name {
   padding: 1.4em 3.5em;
@@ -408,17 +384,11 @@ a.navbar-brand{
 }
 
 @media screen and (max-width: 1200px) {
-  .arrow1 {
-    display: none;
-  }
+  .arrow1 { display: none; }
 
-  .arrow2 {
-    display: none;
-  }
+  .arrow2 { display: none; }
 
-  .arrow3 {
-    display: none;
-  }
+  .arrow3 { display: none; }
 }
 
 .footer-content {
@@ -444,9 +414,7 @@ a.navbar-brand{
   transition: .7s;
 }
 
-.onhover-opacity:hover {
-  opacity: 1;
-}
+.onhover-opacity:hover { opacity: 1; }
 
 .download-btns {
   padding-right: 1.4em;
@@ -458,26 +426,16 @@ a.navbar-brand{
   display: inline-block;
 }
 
-#rules {
-  padding-bottom: 1.2em;
-}
+#rules { padding-bottom: 1.2em; }
 
-#downloadapp {
-  padding-bottom: 1.6em;
-}
+#downloadapp { padding-bottom: 1.6em; }
 
-.devandpay {
-  padding-bottom: 2.1em;
-}
+.devandpay { padding-bottom: 2.1em; }
 
-.footer-block {
-  padding-bottom: 1.8em;
-}
+.footer-block { padding-bottom: 1.8em; }
 
 @media screen and (max-width: 1200px) {
-  .sm-download-btns {
-    margin-bottom: .4em;
-  }
+  .sm-download-btns { margin-bottom: .4em; }
 }
 
 .text-link {
@@ -493,9 +451,7 @@ a.navbar-brand{
   text-decoration: none;
 }
 
-.how-ww {
-  padding-bottom: 6.4em;
-}
+.how-ww { padding-bottom: 6.4em; }
 
 #how-ww {
   background-image: url(../img/BG.png);
@@ -503,15 +459,11 @@ a.navbar-brand{
 }
 
 @media screen and (max-width: 768px) {
-  .footer-content {
-    text-align: center;
-  }
+  .footer-content { text-align: center; }
 }
 
 @media screen and (max-width: 768px) {
-  .iphone-pic {
-    height: 400px;
-  }
+  .iphone-pic { height: 400px; }
 
   .download-btns {
     padding-right: 1em;
@@ -523,27 +475,19 @@ a.navbar-brand{
     padding-bottom: 3.57em;
   }
 
-  .description {
-    padding-bottom: 3.57em;
-  }
+  .description { padding-bottom: 3.57em; }
 
   .features-title {
     padding-top: 2.85em;
     padding-bottom: 3.2em;
   }
 
-  .how-ww-title {
-    padding-top: 0;
-  }
+  .how-ww-title { padding-top: 0; }
 
-  .how-ww {
-    padding-bottom: 2.85em;
-  }
+  .how-ww { padding-bottom: 2.85em; }
 }
 
-.form-padding {
-  padding-bottom: 2.85em;
-}
+.form-padding { padding-bottom: 2.85em; }
 
 .form-title {
   padding-top: 1.47em;
@@ -569,17 +513,13 @@ a.navbar-brand{
   text-decoration: none;
 }
 
-#contact-mail {
-  padding-right: 2.7em;
-}
+#contact-mail { padding-right: 2.7em; }
 
 #contact-phone {
   padding-left: 2.7em;
   font-family: myriad-regular;
 }
-.contacts-icon {
-  padding-right: 1.36em;
-}
+.contacts-icon { padding-right: 1.36em; }
 
 .sm-line {
   margin: 0 auto;
@@ -588,9 +528,7 @@ a.navbar-brand{
   background-color: #929292;
 }
 
-.form-handler {
-  padding-top: 2.5em;
-}
+.form-handler { padding-top: 2.5em; }
 
 .input {
   margin-bottom: 1em;
@@ -599,11 +537,11 @@ a.navbar-brand{
   height: 48px;
   border: 1px solid #929292;
   -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
   -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
   outline: none;
   background-color: rgb(255, 255, 255);
 }
@@ -614,11 +552,11 @@ a.navbar-brand{
   width: 100%;
   height: 95px;
   -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
   -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
   outline: none;
   border: 1px solid #929292;
   background-color: rgb(255, 255, 255);
@@ -633,9 +571,7 @@ select[name="course"] option[disabled] {
   display: none;
 }
 
-.option {
-  color: #929292;
-}
+.option { color: #929292; }
 
 .form-label {
   float: left;
@@ -644,29 +580,22 @@ select[name="course"] option[disabled] {
   font-family: myriad-light;
 }
 
-.placeholder {
-  color: #000;
-}
+.placeholder { color: #000; }
 
 .btn-handler {
-  text-align: center;
   padding-top: 2.85em;
   padding-bottom: 1.4em;
+  text-align: center;
 }
 
-.left {
-  float: right;
-}
+.left { float: right; }
 
-.right {
-  float: left;
-}
+.right { float: left;}
 
-.align-right {
-  text-align: right;
-}
+.align-right { text-align: right; }
 
 .form-btn {
+  padding: 1.06em 2.375em;
   font-size: 16px;
   font-family: myriad-regular;
   color:#f36c12;
@@ -674,7 +603,6 @@ select[name="course"] option[disabled] {
   border-radius: 7px;
   border: solid 1px #f36c12;
   background-color: transparent;
-  padding: 1.06em 2.375em;
   transition: 0.4s;
 }
 
@@ -684,33 +612,25 @@ select[name="course"] option[disabled] {
 }
 
 @media screen and (max-width: 992px) {
-  .left {
-    text-align: center;
-  }
+  .left { text-align: center; }
 
-  .right {
-    text-align: center;
-  }
+  .right { text-align: center; }
 }
 
 @media screen and (max-width: 768px) {
   .align-right {
-    text-align: center;
     padding-bottom: 1.42em;
+    text-align: center;
   }
 
   .align-phone {
-    text-align: center;
     padding-bottom: 2.14em;
+    text-align: center;
   }
 
-  #contact-phone {
-    padding-left: 0;
-  }
+  #contact-phone { padding-left: 0; }
 
-  #contact-mail {
-    padding-right: 1.35em;
-  }
+  #contact-mail { padding-right: 1.35em; }
 }
 
 .approve {
@@ -726,9 +646,7 @@ select[name="course"] option[disabled] {
 }
 
 @media screen and (max-width: 767px) {
-  .first-head {
-    margin-top: .7em;
-  }
+  .first-head { margin-top: .7em; }
 
   .header-link {
     margin-bottom: 1.4em;
@@ -736,9 +654,9 @@ select[name="course"] option[disabled] {
   }
 
   .nav-btn {
-    text-align: center;
     margin-bottom: 1.4em;
     margin-left: .7em;
+    text-align: center;
   }
 
   a.navbar-brand {
@@ -748,15 +666,13 @@ select[name="course"] option[disabled] {
     padding-right: 0;
   }
 
-  .title {
-    font-size: 36px;
-  }
+  .title { font-size: 36px; }
 }
 
 @media screen and (max-width:1200px) and (min-width:993px) {
   .header-link {
-    font-size: 1em;
     margin-right: 1.8em;
+    font-size: 1em;
   }
 
   a.navbar-brand {
@@ -764,13 +680,9 @@ select[name="course"] option[disabled] {
     padding-right: 3.57em;
   }
 
-  #black-ph {
-    font-size: 17px;
-  }
+  #black-ph { font-size: 17px; }
 
-  #orange-ph {
-    font-size: 17px;
-  }
+  #orange-ph { font-size: 17px; }
 }
 
 @media screen and (max-width:992px) and (min-width:768px) {
@@ -784,13 +696,9 @@ select[name="course"] option[disabled] {
     padding-right: 1.8em;
   }
 
-  #black-ph {
-    font-size: 1em;
-  }
+  #black-ph { font-size: 1em; }
 
-  #orange-ph {
-    font-size: 1em;
-  }
+  #orange-ph { font-size: 1em; }
   .nav-btn {
     font-size: 12px;
     margin-right: .83em;
@@ -830,9 +738,7 @@ select[name="course"] option[disabled] {
 }
 
 @media screen and (max-width: 992px) {
-  .callback-name {
-    padding: 2.14em 0;
-  }
+  .callback-name { padding: 2.14em 0; }
 }
 
 #close-icon {
@@ -846,9 +752,7 @@ select[name="course"] option[disabled] {
   width: 100% !important;
 }
 
-.btn {
-  padding: 0.85em 0.85em !important;
-}
+.btn { padding: 0.85em 0.85em !important; }
 
 .btn-default,
 .btn-default:hover,
@@ -868,9 +772,7 @@ select[name="course"] option[disabled] {
   border-color: #d3d3d3 !important;
 }
 
-.blockwithselect {
-  margin-bottom: 15px;
-}
+.blockwithselect { margin-bottom: 15px; }
 
 .bootstrap-select.btn-group .dropdown-menu li a {
   padding-top: 1em;
@@ -883,6 +785,4 @@ a.last-divider {
   padding-bottom: .5em !important;
 }
 
-a.first-divider {
-  padding-top: .5em !important;
-}
+a.first-divider { padding-top: .5em !important; }
