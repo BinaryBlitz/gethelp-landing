@@ -5,11 +5,10 @@ $(document).ready(function() {
     el.classList.remove("popup");
   };
 
-  document.getElementById("callback-form").onsubmit = function(e) {
+  document.getElementById("callback-form").onsubmit = function() {
     var el = document.getElementById("popup-callback-id");
     el.classList.add("popup-flex");
     el.classList.remove("popup");
-    e.preventDefault();
   };
 
   document.getElementById("close-icon").onclick = function() {

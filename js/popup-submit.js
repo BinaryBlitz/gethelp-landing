@@ -1,9 +1,8 @@
 $(document).ready(function() {
-  document.getElementById("order-form").onsubmit = function(e) {
+  document.getElementById("order-form").onsubmit = function() {
     var el = document.getElementById("popup-order-id");
     el.classList.add("popup-flex");
     el.classList.remove("popup");
-    e.preventDefault();
   };
 
   document.getElementById("close-icon-order").onclick = function() {
