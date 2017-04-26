@@ -19,6 +19,7 @@
   <script src="js/phone-mask.js" defer></script>
   <script src="js/form.js"></script>
   <script src="js/popup.js" ></script>
+  <script src="js/popup-submit.js"></script>
   <script src="js/jquery.smartbanner.js"></script>
   <script src="js/smartbanner.js"></script>
   <title>GetHelp - contacts</title>
@@ -32,11 +33,11 @@
       <div class="inline-block">
         <div class="col-sm-12">
           <div class="align-center">
-            <img class="CallbackIcon" src="img/icon-callback.png">
+            <img src="img/icon-callback.png">
           </div>
           <div class="callback-name">Оставьте контактный номер телефона и мы перезвоним вам</div>
         </div>
-        <form action="" method="post">
+        <form id="callback-form" action="" method="post">
           <div class="row">
             <div class="col-md-offset-4 col-md-4 col-xs-12">
               <label class="form-label">Имя</label>
@@ -55,6 +56,29 @@
             </div>
           </div>
         </form>
+      </div>
+    </div>
+  </div>
+  <!--******** SUBMISSION ALERT ********-->
+  <!--*****************************-->
+  <div class="popup" id="popup-order-id">
+    <div><img id="close-icon-order" src="img/icon-close.png"></div>
+    <div class="container">
+      <div class="inline-block">
+        <div class="col-sm-12">
+          <div class="callback-name">Спасибо, за вашу заявку, в ближайшее время мы свяжемся с вами</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="popup-callback-id">
+    <div><img id="close-icon-callback" src="img/icon-close.png"></div>
+    <div class="container">
+      <div class="inline-block">
+        <div class="col-sm-12">
+          <div class="callback-name">Спасибо, мы перезвоним вам в течении 5 минут</div>
+        </div>
       </div>
     </div>
   </div>
@@ -124,7 +148,7 @@
       </div>
       <hr class="sm-line" size="3">
       <div class="form-handler">
-        <form action="" method="post">
+        <form id="order-form" action="" method="post">
           <div class="row">
             <div class="col-md-offset-3 col-md-3 col-xs-12 align-right">
               <label class="form-label">Имя</label>
