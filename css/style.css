@@ -122,17 +122,17 @@ a:hover { text-decoration: none !important; }
 
 .inline-block { display: inline-block; }
 
-.features { padding-bottom: 2.85em; }
+.features { padding-bottom: 2.85rem; }
 
 a.navbar-brand{
-  padding-left: 4em;
+  padding-left: 4rem;
   padding-top: 0;
   padding-bottom: 0;
-  padding-right: 7.1em;
+  padding-right: 7.1rem;
 }
 
 .header-link {
-  margin-right: 2.7em;
+  margin-right: 2.7rem;
   font-size: 18px;
   font-family: myriad-semibold;
   color: #000;
@@ -160,8 +160,8 @@ a.navbar-brand{
 }
 
 .nav-btn {
-  padding: 1em 2em;
-  margin-right: 1.5625em;
+  padding: 1rem 2rem;
+  margin-right: 1.5625rem;
   font-size: 16px;
   font-family: myriad-regular;
   color:#f36c12;
@@ -181,23 +181,23 @@ a.navbar-brand{
 .nav > li > a.nav-btn:focus { background-color: #f36c12; }
 
 .title {
-  padding-top: 1.9em;
-  padding-bottom: 2em;
+  padding-top: 1.9rem;
+  padding-bottom: 2rem;
   font-size: 3.125em;
   font-family: myriad-light;
   color: #000;
 }
 
 .description {
-  padding-bottom: 5em;
+  padding-bottom: 5rem;
   font-size: 20px;
   font-family: myriad-light;
   color: #929292;
 }
 
 .download {
-  padding-bottom: 25px;
-  font-size: 16px;
+  padding-bottom: 1.56em;
+  font-size: 1.14em;
   font-family: myriad-regular;
   color: #010101;
   text-transform: uppercase;
@@ -306,15 +306,15 @@ a.navbar-brand{
 #black-border { border-color: rgb(0,0,0); }
 
 .iphone {
-  padding-bottom: 4.3em;
+  padding-bottom: 4.3rem;
   overflow: hidden;
 }
 
 .align-center { text-align: center; }
 
 .features-title {
-  padding-top: 2.7em;
-  padding-bottom: 2.8em;
+  padding-top: 2.7rem;
+  padding-bottom: 2.8rem;
   font-family: myriad-light;
   font-size: 2.4em;
   text-align: center;
@@ -328,7 +328,7 @@ a.navbar-brand{
 .feature-pic { padding-bottom: 1.4em; }
 
 .feature-name {
-  padding-bottom: 2em;
+  padding-bottom: 2rem;
   font-family: myriad-regular;
   font-size: 1.3em;
   text-transform: uppercase;
@@ -336,7 +336,7 @@ a.navbar-brand{
 }
 
 .feature-description {
-  padding-bottom: 2.8em;
+  padding-bottom: 2.8rem;
   font-family: myriad-light;
   font-size: 1.1em;
   color: #929292;
@@ -351,7 +351,7 @@ a.navbar-brand{
 }
 
 .how-ww-description {
-  padding-bottom: 4.85em;
+  padding-bottom: 4.85rem;
   font-family: myriad-light;
   font-size: 1.4em;
   text-align: center;
@@ -361,7 +361,7 @@ a.navbar-brand{
 .how-ww-icon { height: 45px; }
 
 .how-ww-name {
-  padding: 1.4em 3.5em;
+  padding: 1.4rem 3.5rem;
   font-family: myriad-regular;
   font-size: 1em;
   text-transform: uppercase;
@@ -392,7 +392,7 @@ a.navbar-brand{
 }
 
 .footer-content {
-  padding-top: 2.85em;
+  padding-top: 2.85rem;
   background-color: #f9f9f9;
 }
 .footer-title {
@@ -402,8 +402,8 @@ a.navbar-brand{
   text-transform: uppercase;
 }
 .copyrights {
-  padding-top: 1.8em;
-  padding-bottom: 2.5em;
+  padding-top: 1.8rem;
+  padding-bottom: 2.5rem;
   font-size: 1em;
   font-family: myriad-light;
   color: #929292;
@@ -417,25 +417,25 @@ a.navbar-brand{
 .onhover-opacity:hover { opacity: 1; }
 
 .download-btns {
-  padding-right: 1.4em;
+  padding-right: 1.4rem;
   display: inline-block;
 }
 
 .sm-download-btns {
-  padding-right: 0.7em;
+  padding-right: .7rem;
   display: inline-block;
 }
 
-#rules { padding-bottom: 1.2em; }
+#rules { padding-bottom: 1.2rem; }
 
-#downloadapp { padding-bottom: 1.6em; }
+#downloadapp { padding-bottom: 1.6rem; }
 
-.devandpay { padding-bottom: 2.1em; }
+.devandpay { padding-bottom: 2.1rem; }
 
 .footer-block { padding-bottom: 1.8em; }
 
 @media screen and (max-width: 1200px) {
-  .sm-download-btns { margin-bottom: .4em; }
+  .sm-download-btns { margin-bottom: .4rem; }
 }
 
 .text-link {
@@ -451,7 +451,7 @@ a.navbar-brand{
   text-decoration: none;
 }
 
-.how-ww { padding-bottom: 6.4em; }
+.how-ww { padding-bottom: 6.4rem; }
 
 #how-ww {
   background-image: url(../img/BG.png);
@@ -466,32 +466,32 @@ a.navbar-brand{
   .iphone-pic { height: 400px; }
 
   .download-btns {
-    padding-right: 1em;
-    padding-bottom: 0.7em;
+    padding-right: 1rem;
+    padding-bottom: .7rem;
   }
 
   .title {
-    padding-top: 3.2em;
-    padding-bottom: 3.57em;
+    padding-top: 3.2rem;
+    padding-bottom: 3.57rem;
   }
 
-  .description { padding-bottom: 3.57em; }
+  .description { padding-bottom: 3.57rem; }
 
   .features-title {
-    padding-top: 2.85em;
-    padding-bottom: 3.2em;
+    padding-top: 2.85rem;
+    padding-bottom: 3.2rem;
   }
 
   .how-ww-title { padding-top: 0; }
 
-  .how-ww { padding-bottom: 2.85em; }
+  .how-ww { padding-bottom: 2.85rem; }
 }
 
-.form-padding { padding-bottom: 2.85em; }
+.form-padding { padding-bottom: 2.85rem; }
 
 .form-title {
-  padding-top: 1.47em;
-  padding-bottom: 1.77em;
+  padding-top: 1.47rem;
+  padding-bottom: 1.77rem;
   font-size: 2.42em;
   font-family: myriad-light;
   text-align: center;
@@ -513,13 +513,13 @@ a.navbar-brand{
   text-decoration: none;
 }
 
-#contact-mail { padding-right: 2.7em; }
+#contact-mail { padding-right: 2.7rem; }
 
 #contact-phone {
   padding-left: 2.7em;
   font-family: myriad-regular;
 }
-.contacts-icon { padding-right: 1.36em; }
+.contacts-icon { padding-right: 1.36rem; }
 
 .sm-line {
   margin: 0 auto;
@@ -528,11 +528,11 @@ a.navbar-brand{
   background-color: #929292;
 }
 
-.form-handler { padding-top: 2.5em; }
+.form-handler { padding-top: 2.5rem; }
 
 .input {
-  margin-bottom: 1em;
-  padding-left: 1em;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
   width: 100%;
   height: 48px;
   border: 1px solid #929292;
@@ -547,8 +547,8 @@ a.navbar-brand{
 }
 
 .textarea {
-  margin-bottom: 1em;
-  padding-left: 1em;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
   width: 100%;
   height: 95px;
   -webkit-box-shadow: none;
@@ -583,8 +583,8 @@ select[name="course"] option[disabled] {
 .placeholder { color: #000; }
 
 .btn-handler {
-  padding-top: 2.85em;
-  padding-bottom: 1.4em;
+  padding-top: 2.85rem;
+  padding-bottom: 1.4rem;
   text-align: center;
 }
 
@@ -595,7 +595,7 @@ select[name="course"] option[disabled] {
 .align-right { text-align: right; }
 
 .form-btn {
-  padding: 1.06em 2.375em;
+  padding: 1.06rem 2.375rem;
   font-size: 16px;
   font-family: myriad-regular;
   color:#f36c12;
@@ -619,18 +619,18 @@ select[name="course"] option[disabled] {
 
 @media screen and (max-width: 768px) {
   .align-right {
-    padding-bottom: 1.42em;
+    padding-bottom: 1.42rem;
     text-align: center;
   }
 
   .align-phone {
-    padding-bottom: 2.14em;
+    padding-bottom: 2.14rem;
     text-align: center;
   }
 
   #contact-phone { padding-left: 0; }
 
-  #contact-mail { padding-right: 1.35em; }
+  #contact-mail { padding-right: 1.35rem; }
 }
 
 .approve {
@@ -646,21 +646,21 @@ select[name="course"] option[disabled] {
 }
 
 @media screen and (max-width: 767px) {
-  .first-head { margin-top: .7em; }
+  .first-head { margin-top: .7rem; }
 
   .header-link {
-    margin-bottom: 1.4em;
+    margin-bottom: 1.4rem;
     margin-right: 0;
   }
 
   .nav-btn {
-    margin-bottom: 1.4em;
-    margin-left: .7em;
+    margin-bottom: 1.4rem;
+    margin-left: .7rem;
     text-align: center;
   }
 
   a.navbar-brand {
-    padding-left: .35em;
+    padding-left: .35rem;
     padding-top: 0;
     padding-bottom: 0;
     padding-right: 0;
@@ -671,13 +671,13 @@ select[name="course"] option[disabled] {
 
 @media screen and (max-width:1200px) and (min-width:993px) {
   .header-link {
-    margin-right: 1.8em;
+    margin-right: 1.8rem;
     font-size: 1em;
   }
 
   a.navbar-brand {
-    padding-left: 1.4em;
-    padding-right: 3.57em;
+    padding-left: 1.4rem;
+    padding-right: 3.57rem;
   }
 
   #black-ph { font-size: 17px; }
@@ -688,12 +688,12 @@ select[name="course"] option[disabled] {
 @media screen and (max-width:992px) and (min-width:768px) {
   .header-link {
     font-size: 12px;
-    margin-right: 1.25em;
+    margin-right: 1.25rem;
   }
 
   a.navbar-brand {
-    padding-left: .7em;
-    padding-right: 1.8em;
+    padding-left: .7rem;
+    padding-right: 1.8rem;
   }
 
   #black-ph { font-size: 1em; }
@@ -701,7 +701,7 @@ select[name="course"] option[disabled] {
   #orange-ph { font-size: 1em; }
   .nav-btn {
     font-size: 12px;
-    margin-right: .83em;
+    margin-right: .83rem;
   }
 }
 
@@ -734,11 +734,11 @@ select[name="course"] option[disabled] {
   font-size: 1em;
   text-transform: uppercase;
   text-align: center;
-  padding: 2.14em 21.42em;
+  padding: 2.14rem 21.42rem;
 }
 
 @media screen and (max-width: 992px) {
-  .callback-name { padding: 2.14em 0; }
+  .callback-name { padding: 2.14rem 0; }
 }
 
 #close-icon {
@@ -772,17 +772,17 @@ select[name="course"] option[disabled] {
   border-color: #d3d3d3 !important;
 }
 
-.blockwithselect { margin-bottom: 15px; }
+.blockwithselect { margin-bottom: 1rem; }
 
 .bootstrap-select.btn-group .dropdown-menu li a {
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid #d3d3d3;
 }
 
 a.last-divider {
   border-bottom: none !important;
-  padding-bottom: .5em !important;
+  padding-bottom: .5rem !important;
 }
 
-a.first-divider { padding-top: .5em !important; }
+a.first-divider { padding-top: .5rem !important; }
