@@ -786,3 +786,9 @@ a.last-divider {
 }
 
 a.first-divider { padding-top: .5rem !important; }
+
+.field_with_errors {
+  padding: .14rem;
+  background-color: red;
+  display: table;
+}
