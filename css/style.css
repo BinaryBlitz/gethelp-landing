@@ -741,7 +741,9 @@ select[name="course"] option[disabled] {
   .callback-name { padding: 2.14rem 0; }
 }
 
-#close-icon {
+#close-icon,
+#close-icon-callback,
+#close-icon-order {
   position: absolute;
   top:10px;
   right: 5px;
@@ -752,7 +754,7 @@ select[name="course"] option[disabled] {
   width: 100% !important;
 }
 
-.btn { padding: 0.85em 0.85em !important; }
+.btn { padding: 1.3rem 1.3rem !important; }
 
 .btn-default,
 .btn-default:hover,

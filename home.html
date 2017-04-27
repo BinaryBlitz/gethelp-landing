@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="css/jquery.smartbanner.css" media="screen">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/mask.js"></script>
+  <script src="js/phone-mask.js" defer></script>
+  <script src="js/form.js"></script>
   <script src="js/popup.js"></script>
   <script src="js/jquery.smartbanner.js"></script>
   <script src="js/smartbanner.js"></script>
@@ -29,21 +32,21 @@
       <div class="inline-block">
         <div class="col-sm-12">
           <div class="align-center">
-            <img class="CallbackIcon" src="img/icon-callback.png">
+            <img src="img/icon-callback.png">
           </div>
           <div class="callback-name">Оставьте контактный номер телефона и мы перезвоним вам</div>
         </div>
-        <form action="" method="post">
+        <form id="callback-form" action="" method="post">
           <div class="row">
             <div class="col-md-offset-4 col-md-4 col-sm-12 col-xs-12">
               <label class="form-label">Имя</label>
-              <input class="input placeholder" id="nameIn" name="name" type="text" placeholder="Имя" required>
+              <input class="input placeholder" id="cbName" name="name" type="text" placeholder="Имя" required>
             </div>
           </div>
           <div class="row">
             <div class="col-md-offset-4 col-md-4 col-sm-12 col-xs-12">
               <label class="form-label">Телефон</label>
-              <input class="input" id="phone" name="phone_number" type="tel" placeholder="+7 (900) 000 00 00" required>
+              <input class="input" id="cbPhone" name="phone_number" type="tel" placeholder="+7 (900) 000 00 00" required>
             </div>
           </div>
           <div class="row">
@@ -52,6 +55,18 @@
             </div>
           </div>
         </form>
+      </div>
+    </div>
+  </div>
+  <!--******** SUBMISSION ALERT ********-->
+  <!--*****************************-->
+  <div class="popup" id="popup-callback-id">
+    <div><img id="close-icon-callback" src="img/icon-close.png"></div>
+    <div class="container">
+      <div class="inline-block">
+        <div class="col-sm-12">
+          <div class="callback-name">Спасибо, мы перезвоним вам в течении 5 минут</div>
+        </div>
       </div>
     </div>
   </div>
