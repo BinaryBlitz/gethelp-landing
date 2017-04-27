@@ -3,7 +3,7 @@ var validations = {
 };
 $(document).ready(function() {
   // Check all the input fields of type email. This function will handle all the email addresses validations
-  $("input[type=email]").change( function() {
+  $("input[type=email]").change(function() {
     // Set the regular expression to validate the email
     validation = new RegExp(validations['email'][0]);
     // validate the email value against the regular expression
@@ -20,11 +20,13 @@ $(document).ready(function() {
       // This is really important. If the validation is successful you need to reset the custom error message
       this.setCustomValidity('');
       $("#emailInput").css("border-color", "#929292");
+      $("#emailInput").css("color", "#000");
       var el = document.getElementById("emailInput");
       el.classList.add("approve");
       el.classList.remove("failed");
     }
   });
+
   $('#formName').change(function() {
     var el = document.getElementById("formName");
     el.className += " approve";

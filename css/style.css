@@ -754,7 +754,7 @@ select[name="course"] option[disabled] {
   width: 100% !important;
 }
 
-.btn { padding: 0.85em 0.85em !important; }
+.btn { padding: 1.3rem 1.3rem !important; }
 
 .btn-default,
 .btn-default:hover,
@@ -788,3 +788,9 @@ a.last-divider {
 }
 
 a.first-divider { padding-top: .5rem !important; }
+
+.field_with_errors {
+  padding: .14rem;
+  background-color: red;
+  display: table;
+}
